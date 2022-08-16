@@ -1,6 +1,11 @@
 const addTodo = (payload) => ({
-  type: "todoList/addTodo",
+  type: 'todoList/addTodo',
   payload,
-});
+})
 
-export { addTodo };
+const searchFiltersChange = (payload) => ({
+  type: 'filters/searchChange',
+  payload,
+})
+
+export { addTodo, searchFiltersChange }
